@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Additional custom styles */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* .ii{    margin-top: -90px !important;
+  margin-right: -230px !important;
+  color: yellow; */
+  /* width:16px;
+   height:16px; */
+ 
+  
+/* } */
+.carousel-indicators {
+  display: none !important;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 26rem;
+  margin-left: 15%;
+}
+
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 72rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 67%;
+  background-size: 100% 100%;
+}
+
+/* @media screen and (min-width: 480px) {
+  /* .ii{    margin-top: -90px !important;
+    margin-right: -1048px !important;
+    color: yellow;
+    /* width:30px; height:30px;
+    */
+    
+  /* } */ */
+/* } */ */
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 447px;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px !important;
+  padding: 0;
+  color: red !important;
+  text-align: center;
+  background: 0 0;
+  margin: 20px !important;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 56px;
+  z-index: 1020;
+  margin-top: 0px;
+  border: solid #fff;
+}
+.bg-light {
+  --bs-bg-opacity: "opacity";
+}
+
+.hh{position:sticky !important;
+  top:0;
+  height: 20px;
+  z-index: 1}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 445px;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: -85% !important; */
+  padding: 0;
+  /* color: #fff; */
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+  color: orangered;
+  /* border: solid yellow; */
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  border: solid;
+  border-radius: 50%;
+  color: orangered;
+}
+.mr-auto{
+  color:#fff !important
+}
+.carousel {
+  position: relative;
+  margin-top: -55px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: -449px;
+  margin-right: -480px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 179%;
+  padding: 0;
+  color: #fff;
+  /* text-align: center; */
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
