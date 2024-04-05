@@ -13,24 +13,15 @@ function MobileNavigation() {
       {/* <Navbar.Brand href="#home"><img src={logo} style={{width:"20px",height:'20px', position:'sticky', left:'40'}}/></Navbar.Brand> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
       <Navbar.Collapse id="basic-navbar-nav" className={`${expanded ? 'show' : ''}`}>
-        <Nav className="mr-auto" >
-          <div className='container'>
-          <div className="row align-items-start">
-          <div className='col'>
-          < Nav.Link className='row' style={{color:'white'}} href="#home">Projects</Nav.Link>
-          < Nav.Link className='row' style={{color:'white'}} href="#link">EXPERTISE</Nav.Link>
-          < Nav.Link className='row' style={{color:'white'}} href="#link">ABOUT US</Nav.Link>
-          < Nav.Link className='row' style={{color:'white'}} href="#link">PEOPLE</Nav.Link>
-          </div>
-          <div className="col">
-          <Nav.Link style={{color:'white'}} href="#link"> <img src={logo} style={{width:"80px",height:'80px', position:'sticky', left:'40'}}/></Nav.Link>
-          </div>
-        <div className="col">
+        {/* <Nav className="mr-auto" >
+          <Nav.Link style={{color:'white'}} href="#home">Projects</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="#link">EXPERTISE</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="#link">ABOUT US</Nav.Link>
+          <Nav.Link style={{color:'white'}} href="#link">PEOPLE</Nav.Link>
+         
+        
           <Nav.Link style={{color:'white'}} href="#link">CAREERS</Nav.Link>
           <Nav.Link style={{color:'white',float:'end'}} href="#link">AU</Nav.Link>
-          </div>
-          </div>
-          </div>
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -38,7 +29,21 @@ function MobileNavigation() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown> */}
-        </Nav>
+        {/* </Nav> */} 
+        <div class="container">
+  <div class="row">
+    <div class="col-8"><Nav.Link style={{color:'white', padding:'20px',display: 'inline-flex'}} href="#home">Projects</Nav.Link>
+          <Nav.Link style={{color:'white',padding:'20px',display: 'inline-flex'}} href="#link">EXPERTISE</Nav.Link>
+          <Nav.Link style={{color:'white',padding:'20px',display: 'inline-flex'}} href="#link">ABOUT US</Nav.Link>
+          <Nav.Link style={{color:'white',padding:'20px',display: 'inline-flex'}} href="#link">PEOPLE</Nav.Link>
+         </div>
+   
+  
+    <div class="col-sm"> <Nav.Link style={{color:'white'}} href="#link"> <img src={logo} style={{width:"80px",height:'80px', position:'sticky', left:'40'}}/></Nav.Link></div>
+    <div class="col-sm"> <Nav.Link style={{color:'white',padding:'20px',display: 'inline-flex'}} href="#link">CAREERS</Nav.Link>
+          <Nav.Link style={{color:'white',padding:'20px',display: 'inline-flex',float:'end'}} href="#link">AU</Nav.Link></div>
+  </div>
+</div>
       </Navbar.Collapse>
     </Navbar>
   );
