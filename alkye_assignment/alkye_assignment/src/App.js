@@ -6,6 +6,8 @@ import Tabs from './components/Tabs';
 import MobileNavigation from './components/MobileNavigation';
 import Second from './components/Second';
 import Third from './components/Third';
+import Four from './components/Four';
+import Five from './components/Five';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
        <Tabs />
        <Second/>
        <Third/>
+       <Four/>
+       <Five/>
        
         
      
